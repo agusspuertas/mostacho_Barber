@@ -3,7 +3,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 function Header() {
   return (
-    <header className='min-h-min bg-slate-300 grid grid-cols-3 '>
+    <header className='min-h-min bg-[#F5F5F5] grid grid-cols-3 '>
 
       <section className=''>
         <div className='p-6 flex'>
@@ -22,6 +22,7 @@ function Header() {
 
         <article>
         <LinkRouter to={'/'} > <p>Contacto</p> </LinkRouter>
+
         </article>
       </section>
     </header>
