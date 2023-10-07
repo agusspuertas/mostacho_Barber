@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link as LinkRouter } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
   return (
@@ -21,7 +22,7 @@ function Header() {
         </article>
 
         <article>
-        <LinkRouter to={'/'} > <p>Contacto</p> </LinkRouter>
+        <ScrollLink activeClass='active' spy={true} smooth={true} to="footer"  offset={-70} duration={700}> <p>Contacto</p> </ScrollLink>
 
         </article>
       </section>
