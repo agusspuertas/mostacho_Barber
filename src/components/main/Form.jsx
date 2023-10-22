@@ -80,12 +80,17 @@ const Formulario = () => {
           {step === 2 && (
             <div className='flex flex-col'>
               <h1 className='text-center font-bold text-2xl'> Fecha y Hora </h1>
-              <section className='flex flex-col mx-auto mt-10'>
+              <section className='flex flex-col'>
+              <label className=' ml-5 mt-10 ' For="ServisSelect">Seleccione el Día:</label>
+              <div className='ml-16 mt-2'>
                 <DatePicker
                   showIcon
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
+                  className="p-2 border w-[9vw]  border-gray-400 rounded focus:outline-none focus:border-blue-500"
                 />
+                
+              </div>
               </section>
             </div>
           )}
