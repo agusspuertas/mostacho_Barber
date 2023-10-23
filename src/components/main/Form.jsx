@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const Formulario = () => {
 
+  const selectRef = useRef();
+
+  // REACT DATEPICKER
+
   const [startDate, setStartDate] = useState(new Date())
 
+  //ABRIR FORMULARIO DE PEDIR TURNO
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState(1);
 
@@ -22,6 +27,7 @@ const Formulario = () => {
 
   const handleCancel = () => {
     setOpen(false);
+    selectRef.current.value = "";
   }
 
   return (
@@ -47,9 +53,9 @@ const Formulario = () => {
                 <div className='flex flex-col'>
                   <label className='mt-10 ml-5 mb-2' For="BarberSelect">Peluquero:</label>
 
-                  <select className='w-3/6 mx-8' name="barbers" id="BarbersSelect">
+                  <select ref={selectRef} className='w-3/6 mx-8' name="barbers" id="Select1">
 
-                    <option value="" disabled >Seleccione un peluquero</option>
+                    <option value="" hidden >Seleccione un peluquero</option>
                     <option value="1">Eric Mota</option>
                     <option value="2">Miguel Fanta</option>
                     <option value="3">Emi Lucon</option>
@@ -62,9 +68,9 @@ const Formulario = () => {
                 <div className='flex flex-col'>
                   <label className='mt-20 ml-5 mb-2' For="ServisSelect">Servicio:</label>
 
-                  <select className='w-3/6 mx-8' name="servis" id="ServiSelect">
+                  <select ref={selectRef} className='w-3/6 mx-8' name="servis" id="Select2">
 
-                    <option value="" disabled >Seleccione el Servicio </option>
+                    <option value="" hidden >Seleccione el Servicio </option>
                     <option value="1">Corte de Pelo</option>
                     <option value="2">Corte de Pelo y Barba</option>
                     <option value="3">Color</option>
@@ -81,16 +87,29 @@ const Formulario = () => {
             <div className='flex flex-col'>
               <h1 className='text-center font-bold text-2xl'> Fecha y Hora </h1>
               <section className='flex flex-col'>
-              <label className=' ml-5 mt-10 ' For="ServisSelect">Seleccione el Día:</label>
-              <div className='ml-16 mt-2'>
-                <DatePicker
-                  showIcon
-                  selected={startDate}
-                  onChange={(date) => setStartDate(date)}
-                  className="p-2 border w-[9vw]  border-gray-400 rounded focus:outline-none focus:border-blue-500"
-                />
-                
-              </div>
+                <label className=' ml-5 mt-10 ' For="ServisSelect">Seleccione el Día:</label>
+                <div className='ml-16 mt-2'>
+                  <DatePicker
+                    showIcon
+                    selected={startDate}
+                    onChange={(date) => setStartDate(date)}
+                    className="p-2 border w-[9vw]  border-gray-400 rounded focus:outline-none focus:border-blue-500"
+                  />
+
+                </div>
+                <label className=' ml-5 mt-10 ' For="ServisSelect">Seleccione la Hora:</label>
+
+                <select ref={selectRef} className='w-[9vw] ml-16 mt-2 border border-gray-400 rounded focus:outline-none focus:border-blue-500' name="servis" id="Select2">
+
+                  <option value="" hidden>Elíge la Hora</option>
+                  <option value="manzana">13:00</option>
+                  <option value="plátano">13:45</option>
+                  <option value="naranja">14:30</option>
+                  <option value="uva">15:15</option>
+                  <option value="fresa">16:00</option>
+
+                </select>
+
               </section>
             </div>
           )}
