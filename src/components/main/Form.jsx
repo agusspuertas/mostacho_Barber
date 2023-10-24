@@ -4,7 +4,16 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 const Formulario = () => {
 
+
   const selectRef = useRef();
+
+  //PAGINA ANTERIOR DEL FORMULARIO
+
+  const handlePrev = () => {
+    if (step > 1) {
+      setStep(step - 1)
+    }
+  }
 
   // REACT DATEPICKER
 
@@ -39,14 +48,14 @@ const Formulario = () => {
       <button className='bg-gray-300 w-content p-1 px-3 font-bold mx-auto rounded-2xl' onClick={handleOpen}>Pedí tu Turno</button>
 
       {open && (
-        <div className='m-auto h-[61vh] w-[32vw] my-5 bg-gray-200 flex flex-col rounded-2xl'>
+        <form className='m-auto h-[61vh] w-[32vw] my-5 bg-gray-200 flex flex-col rounded-2xl'>
 
           {/* PRIMER FORMULARIO */}
 
           {step === 1 && (
-            <div>
+            <div className='flex flex-col h-full'>
               <h1 className='text-center font-bold text-2xl'> Servicio y Peluquero </h1>
-              <form className='flex flex-col'>
+              <div className='flex flex-col'>
 
                 {/* PELUQUERO */}
 
@@ -77,15 +86,26 @@ const Formulario = () => {
 
                   </select>
                 </div>
-              </form>
+              </div>
+
+              <div className='flex justify-center mt-auto mb-3 '>
+                <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleCancel} >Cancelar</button>
+                <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleNext} >Siguinte</button>
+              </div>
+
             </div>
           )}
 
           {/* SEGUNDO FORMULARIO */}
 
           {step === 2 && (
-            <div className='flex flex-col'>
-              <h1 className='text-center font-bold text-2xl'> Fecha y Hora </h1>
+            <div className='flex flex-col h-full'>
+              <section className='flex '>
+                <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle " onClick={handlePrev}>
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
+                </button>
+                  <h1 className='m-auto font-bold text-2xl'> Fecha y Hora </h1>
+              </section>
               <section className='flex flex-col'>
                 <label className=' ml-5 mt-10 ' For="ServisSelect">Seleccione el Día:</label>
                 <div className='ml-16 mt-2'>
@@ -109,27 +129,67 @@ const Formulario = () => {
                   <option value="fresa">16:00</option>
 
                 </select>
-
               </section>
+              <div className='flex justify-center mt-auto mb-3'>
+                <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleCancel} >Cancelar</button>
+                <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleNext} >Siguinte</button>
+              </div>
             </div>
           )}
 
           {/* TERCER FORMULARIO */}
 
           {step === 3 && (
-            <div style={{ backgroundColor: 'yellow', width: '50px', height: '50px', color: 'white', textAlign: 'center' }}>
-              3
+
+            <div className='flex flex-col h-full'>
+             <section className='flex '>
+                <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle " onClick={handlePrev}>
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
+                </button>
+                  <h1 className='m-auto font-bold text-2xl'> Tu Información </h1>
+              </section>
+              <label className="block text-sm ml-5 mt-5 font-medium text-gray-900"> Nombre: </label>
+              <div className="mt-2 ml-14  w-[13vw]">
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Ingrese su nombre"
+                  required
+                  className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm  ring-gray-300 placeholder:text-gray-400  "
+                />
+              </div>
+
+              <label className="block text-sm ml-5 mt-5 font-medium text-gray-900"> Apellido: </label>
+              <div className="mt-2 ml-14  w-[13vw]">
+                <input
+                  type="text"
+                  name="apellido"
+                  placeholder="Ingrese su apellido"
+                  required
+                  className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  "
+                />
+              </div>
+
+              <label className="block text-sm ml-5 mt-5 font-medium text-gray-900"> Correo electrónico: </label>
+              <div className="mt-2 ml-14  w-[13vw]">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Ingrese su email"
+                  required
+                  className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  "
+                />
+              </div>
+
+
+              <div className='flex justify-center mt-auto mb-3'>
+                <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleCancel} >Cancelar</button>
+                <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3' type="submit"> Enviar </button>
+              </div>
+
             </div>
           )}
-
-          {/* BOTON DE SIGUIENTE Y CANCELAR */}
-
-          <div className='flex justify-center mt-auto mb-2'>
-            <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleCancel} >Cancelar</button>
-
-            <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleNext} >Sigueinte</button>
-          </div>
-        </div>
+        </form>
       )}
     </div>
 
