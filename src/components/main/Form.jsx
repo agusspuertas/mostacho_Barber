@@ -48,12 +48,12 @@ const Formulario = () => {
       <button className='bg-gray-300 w-content p-1 px-3 font-bold mx-auto rounded-2xl' onClick={handleOpen}>Pedí tu Turno</button>
 
       {open && (
-        <form className='m-auto h-[61vh] w-[32vw] my-5 bg-gray-200 flex flex-col rounded-2xl'>
+        <form className='m-auto min-hfit w-[32vw] my-5 bg-gray-200 flex flex-col rounded-2xl'>
 
           {/* PRIMER FORMULARIO */}
 
           {step === 1 && (
-            <div className='flex flex-col h-full'>
+            <div className='flex flex-col h-[23rem]'>
               <h1 className='text-center font-bold text-2xl'> Servicio y Peluquero </h1>
               <div className='flex flex-col'>
 
@@ -99,7 +99,7 @@ const Formulario = () => {
           {/* SEGUNDO FORMULARIO */}
 
           {step === 2 && (
-            <div className='flex flex-col h-full'>
+            <div className='flex flex-col h-[23rem]'>
               <section className='flex '>
                 <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle " onClick={handlePrev}>
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
@@ -141,7 +141,7 @@ const Formulario = () => {
 
           {step === 3 && (
 
-            <div className='flex flex-col h-full'>
+            <div className='flex flex-col h-[23rem]'>
              <section className='flex '>
                 <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle " onClick={handlePrev}>
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
