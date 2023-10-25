@@ -45,22 +45,22 @@ const Formulario = () => {
 
       {/* PEDIR TURNO BOTON */}
 
-      <button className='bg-gray-300 w-content p-1 px-3 font-bold mx-auto rounded-2xl' onClick={handleOpen}>Pedí tu Turno</button>
+      <button className='bg-[#383D42] text-white w-content p-1 px-3 font-bold mx-auto rounded-2xl' onClick={handleOpen}>Pedí tu Turno</button>
 
       {open && (
-        <form className='m-auto min-hfit w-[32vw] my-5 bg-gray-200 flex flex-col rounded-2xl'>
+        <form className='m-auto min-hfit w-[32vw] my-5 bg-[#383D42] flex flex-col rounded-2xl'>
 
           {/* PRIMER FORMULARIO */}
 
           {step === 1 && (
             <div className='flex flex-col h-[23rem]'>
-              <h1 className='text-center font-bold text-2xl'> Servicio y Peluquero </h1>
+              <h1 className='text-center text-white font-bold text-2xl'> Servicio y Peluquero </h1>
               <div className='flex flex-col'>
 
                 {/* PELUQUERO */}
 
                 <div className='flex flex-col'>
-                  <label className='mt-10 ml-5 mb-2' For="BarberSelect">Peluquero:</label>
+                  <label className='mt-10 ml-5 mb-2 text-white' For="BarberSelect">Peluquero:</label>
 
                   <select ref={selectRef} className='w-3/6 mx-8' name="barbers" id="Select1">
 
@@ -75,7 +75,7 @@ const Formulario = () => {
                 {/* SERVICIO */}
 
                 <div className='flex flex-col'>
-                  <label className='mt-20 ml-5 mb-2' For="ServisSelect">Servicio:</label>
+                  <label className='mt-20 ml-5 mb-2 text-white' For="ServisSelect">Servicio:</label>
 
                   <select ref={selectRef} className='w-3/6 mx-8' name="servis" id="Select2">
 
@@ -104,10 +104,10 @@ const Formulario = () => {
                 <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle " onClick={handlePrev}>
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
                 </button>
-                  <h1 className='m-auto font-bold text-2xl'> Fecha y Hora </h1>
+                  <h1 className='m-auto font-bold text-2xl text-white'> Fecha y Hora </h1>
               </section>
               <section className='flex flex-col'>
-                <label className=' ml-5 mt-10 ' For="ServisSelect">Seleccione el Día:</label>
+                <label className=' ml-5 mt-10 text-white' For="ServisSelect">Seleccione el Día:</label>
                 <div className='ml-16 mt-2'>
                   <DatePicker
                     showIcon
@@ -117,7 +117,7 @@ const Formulario = () => {
                   />
 
                 </div>
-                <label className=' ml-5 mt-10 ' For="ServisSelect">Seleccione la Hora:</label>
+                <label className=' ml-5 mt-10 text-white ' For="ServisSelect">Seleccione la Hora:</label>
 
                 <select ref={selectRef} className='w-[9vw] ml-16 mt-2 border border-gray-400 rounded focus:outline-none focus:border-blue-500' name="servis" id="Select2">
 
@@ -146,9 +146,9 @@ const Formulario = () => {
                 <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle " onClick={handlePrev}>
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
                 </button>
-                  <h1 className='m-auto font-bold text-2xl'> Tu Información </h1>
+                  <h1 className='m-auto font-bold text-2xl text-white'> Tu Información </h1>
               </section>
-              <label className="block text-sm ml-5 mt-5 font-medium text-gray-900"> Nombre: </label>
+              <label className="block text-sm ml-5 mt-5 font-medium text-white"> Nombre: </label>
               <div className="mt-2 ml-14  w-[13vw]">
                 <input
                   type="text"
@@ -159,7 +159,7 @@ const Formulario = () => {
                 />
               </div>
 
-              <label className="block text-sm ml-5 mt-5 font-medium text-gray-900"> Apellido: </label>
+              <label className="block text-sm ml-5 mt-5 font-medium text-white"> Apellido: </label>
               <div className="mt-2 ml-14  w-[13vw]">
                 <input
                   type="text"
@@ -170,7 +170,7 @@ const Formulario = () => {
                 />
               </div>
 
-              <label className="block text-sm ml-5 mt-5 font-medium text-gray-900"> Correo electrónico: </label>
+              <label className="block text-sm ml-5 mt-5 font-medium text-white"> Correo electrónico: </label>
               <div className="mt-2 ml-14  w-[13vw]">
                 <input
                   type="email"
