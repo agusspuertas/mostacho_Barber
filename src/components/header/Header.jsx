@@ -7,7 +7,7 @@ function Header() {
     <header className='min-h-min  bg-gradient-to-b from-[#D5B39A] to-[#EDDED4]  grid grid-cols-3 '>
 
       <section className=''>
-        <div className='p-7 mb-3 flex'>
+        <div className='p-7 mb-2 flex'>
           <img className='w-60 drop-shadow-2xl justify-around' src="./public/Logo_MostachoBarber.png" alt="logo" />
            </div>
       </section>
