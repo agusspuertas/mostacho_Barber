@@ -13,7 +13,7 @@ function Footer() {
 
         <div className='w-[20rem] h-[11rem] ml-7 rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] my-auto'>
           <h1 className='text-2xl bg-[#383D42] text-[#F5F5F5] text-center rounded-t-xl font-serif'>Ubicación📍</h1>
-          <ul className='text-[#F3E9E2] mt-3'>
+          <ul className='text-[#F3E9E2] font-sans font-medium  mt-3'>
             <li className='ml-5'>-Chacabuco 232</li>
             <li className='ml-5'>-Godoy Cruz</li>
             <li className='ml-5'>-A una cuadra de la ciclovía</li>
