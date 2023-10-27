@@ -29,7 +29,7 @@ function Footer() {
 
 
       <article className='flex flex-col  m-auto justify-center mt-auto bg-gradient-to-t from-[#E1C9B7] '>
-     
+        <p>&copy; 2023 Mostacho.Barberia. Todos los derechos reservados.</p>
         <img className='w-20 m-auto mb-1 mt-1' src="./public/Logo_SoloMostacho.png" alt="Logo_Bigote" />
       </article>
 
