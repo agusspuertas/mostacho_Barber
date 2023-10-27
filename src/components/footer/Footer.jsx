@@ -13,6 +13,12 @@ function Footer() {
 
         <div className='w-[20rem] h-[11rem] ml-7 rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] my-auto'>
           <h1 className='text-2xl bg-[#383D42] text-[#F5F5F5] text-center rounded-t-xl font-serif'>Ubicación</h1>
+          <ul className='text-[#F3E9E2] mt-3'>
+            <li className='ml-5'>-Chacabuco 232</li>
+            <li className='ml-5'>-Godoy Cruz</li>
+            <li className='ml-5'>-A una cuadra de la ciclovía</li>
+            <a href="https://maps.app.goo.gl/b7ZMAYafwYbdLuae6"><li className='text-blue-400 hover:text-white mt-4 text-center'>Aquí📍</li></a>
+          </ul>
         </div>
 
         <div className='w-[20rem] h-[11rem] ml-7 rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] my-auto'>
@@ -21,8 +27,10 @@ function Footer() {
 
       </article>
 
-      <article className='flex justify-center mt-auto bg-gradient-to-t from-[#E1C9B7] '>
-        <img className='w-20 mb-1 mt-1' src="./public/Logo_SoloMostacho.png" alt="Logo_Bigote" />
+
+      <article className='flex flex-col  m-auto justify-center mt-auto bg-gradient-to-t from-[#E1C9B7] '>
+     
+        <img className='w-20 m-auto mb-1 mt-1' src="./public/Logo_SoloMostacho.png" alt="Logo_Bigote" />
       </article>
 
 
