@@ -45,7 +45,7 @@ const Formulario = () => {
 
       {/* PEDIR TURNO BOTON */}
 
-      <button className='bg-[#383D42] text-white w-content p-1 px-3 font-bold mx-auto rounded-2xl hover:text-blue-400' onClick={handleOpen}>Pedí tu Turno</button>
+      <button className='bg-[#383D42] text-white w-content p-1 px-3 font-bold mx-auto rounded-2xl delay-100 hover:text-blue-400 hover:scale-105   ' onClick={handleOpen}>Pedí tu Turno</button>
 
       {open && (
         <form className='m-auto min-hfit w-[32vw] my-5 bg-[#383D42] flex flex-col rounded-2xl'>
