@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <section id='footer' className='bg-gradient-to-t from-[#E1C9B7] to-[#F3E9E2] h-72 flex flex-col min-w-full' >
+    <section id='footer' className='bg-gradient-to-t from-[#E1C9B7] to-[#F3E9E2] min-h-full flex flex-col min-w-full' >
 
-      <article className='flex flex-col items-center justify-around md:flex-row md:justify-araund'>
+      <article className='h-full flex items-center justify-around'>
 
         <div className=' border border-gray-600'>
           <h1 className='text-2xl bg-[#383D42] text-[#F5F5F5] text-center font-serif'>Mostacho Barberia</h1>
