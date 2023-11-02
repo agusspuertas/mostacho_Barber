@@ -12,7 +12,7 @@ function Footer() {
         </div>
 
         <div className='w-[20rem] h-[11rem]  rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] mx-2 my-8 md:mx-3 lg:m-0'>
-          <h1 className='text-2xl bg-[#383D42] text-[#f65a5a] text-center rounded-t-xl font-serif'>Ubicación</h1>
+          <h1 className='text-2xl bg-[#383D42] text-[#e06161] text-center rounded-t-xl font-serif'>Ubicación</h1>
           <ul className='text-[#F5F5F5] font-sans font-light  mt-3'>
             <li className='text-center'>-Chacabuco 232</li>
             <li className='text-center'>-Godoy Cruz</li>
@@ -39,7 +39,7 @@ function Footer() {
       </article>
 
 
-      <article className='flex flex-col  m-auto justify-center mt-auto bg-gradient-to-t from-[#E1C9B7] '>
+      <article className='flex flex-col  m-auto justify-center mt-10 bg-gradient-to-t from-[#E1C9B7] '>
         <p className='text-gray-600 text-center'>&copy; 2023 MostachoBarberia - All rights reserved.</p>
         <img className='w-20 m-auto mb-1 mt-1' src="./public/Logo_SoloMostacho.png" alt="Logo_Bigote" />
       </article>

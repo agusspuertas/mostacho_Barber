@@ -62,7 +62,7 @@ const Formulario = () => {
                 <div className='flex flex-col'>
                   <label className='mt-10 mb-2 text-white' For="BarberSelect">Peluquero:</label>
 
-                  <select ref={selectRef} className='mr-auto text-lg max-w-min bg-[#383D42] p-1.5 border border-gray-400 rounded  ring-1 ring-inset ring-gray-300 focus:outline-none focus:border-blue-500' name="barbers" id="Select1">
+                  <select ref={selectRef} className='mr-auto text-lg max-w-min bg-[#383D42] p-1.5 border text-gray-400 border-gray-400 rounded  ring-1 ring-inset ring-gray-300 focus:outline-none focus:border-blue-500' name="barbers" id="Select1">
 
                     <option value="" hidden >Seleccione un peluquero</option>
                     <option value="1">Eric Mota</option>
@@ -77,7 +77,7 @@ const Formulario = () => {
                 <div className='flex flex-col'>
                   <label className='mt-20 mb-2 text-white' For="ServisSelect">Servicio:</label>
 
-                  <select ref={selectRef} className='mr-auto text-lg max-w-min bg-[#383D42] p-1.5 border border-gray-400 rounded  ring-1 ring-inset ring-gray-300 focus:outline-none focus:border-blue-500'>
+                  <select ref={selectRef} className='mr-auto text-lg max-w-min bg-[#383D42] text-gray-400 p-1.5 border border-gray-400 rounded  ring-1 ring-inset ring-gray-300 focus:outline-none focus:border-blue-500'>
 
                     <option value="" hidden >Seleccione el servicio </option>
                     <option value="1">Corte de Pelo</option>
@@ -119,7 +119,7 @@ const Formulario = () => {
                 </div>
                 <label className='mt-10 text-white' For="ServisSelect">Seleccione la Hora:</label>
 
-                <select ref={selectRef} className='text-lg max-w-min mr-auto mt-2 border border-gray-400  ring-1 ring-inset ring-gray-300 bg-[#383D42] rounded focus:outline-none focus:border-blue-500 p-1.5' name="servis" id="Select2">
+                <select ref={selectRef} className='text-lg max-w-min mr-auto mt-2 border border-gray-400 text-gray-400 ring-1 ring-inset ring-gray-300 bg-[#383D42] rounded focus:outline-none focus:border-blue-500 p-1.5' name="servis" id="Select2">
 
                   <option value="" hidden>Elíge la Hora</option>
                   <option value="hora1">13:00</option>
