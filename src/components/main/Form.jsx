@@ -48,7 +48,7 @@ const Formulario = () => {
       <button className='bg-[#383D42]  text-white w-content p-1 px-3 font-bold mx-auto rounded-2xl delay-100 hover:text-blue-400 hover:scale-105   ' onClick={handleOpen}>Pedí tu Turno</button>
 
       {open && (
-        <form className='min-w-full md:min-w-min md:py-7 md:px-24 m-auto min-h-fit my-5 shadow-lg shadow-gray-600 bg-[#383D42] flex flex-col place-items-center rounded-2xl'>
+        <form className='min-w-full md:min-w-[35rem] py-5 m-auto min-h-fit my-5 shadow-lg shadow-gray-600 bg-[#383D42] flex flex-col place-items-center rounded-2xl'>
 
           {/* PRIMER FORMULARIO */}
 
