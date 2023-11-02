@@ -6,12 +6,12 @@ function Footer() {
 
       <article className='flex-col-reverse md:flex-row md:justify-around flex place-items-center h-full mb-3 md:mx-4'>
 
-        <div className='w-fit border border-gray-600'>
+        <div className='w-fit border bg-[#383D42] rounded-xl shadow-lg border-gray-600  overflow-hidden'>
           <h1 className='text-2xl bg-[#383D42] w-full text-[#f65a5a] text-center font-serif'>Mostacho Barberia</h1>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.2928159974267!2d-68.85213642514675!3d-32.916861070383405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e097c5b4da353%3A0xc286f99f89eddd3f!2sMostacho%20Barberia!5e0!3m2!1ses!2sar!4v1698115979310!5m2!1ses!2sar" width="300" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.2928159974267!2d-68.85213642514675!3d-32.916861070383405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e097c5b4da353%3A0xc286f99f89eddd3f!2sMostacho%20Barberia!5e0!3m2!1ses!2sar!4v1698115979310!5m2!1ses!2sar" width="300" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div className='w-[20rem] h-[11rem]  rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] my-8 md:mx-3 lg:m-0'>
+        <div className='w-[20rem] h-[11rem]  rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] mx-2 my-8 md:mx-3 lg:m-0'>
           <h1 className='text-2xl bg-[#383D42] text-[#f65a5a] text-center rounded-t-xl font-serif'>Ubicación</h1>
           <ul className='text-[#F5F5F5] font-sans font-light  mt-3'>
             <li className='text-center'>-Chacabuco 232</li>
@@ -40,7 +40,7 @@ function Footer() {
 
 
       <article className='flex flex-col  m-auto justify-center mt-auto bg-gradient-to-t from-[#E1C9B7] '>
-        <p className='text-gray-600'>&copy; 2023 MostachoBarberia - All rights reserved.</p>
+        <p className='text-gray-600 text-center'>&copy; 2023 MostachoBarberia - All rights reserved.</p>
         <img className='w-20 m-auto mb-1 mt-1' src="./public/Logo_SoloMostacho.png" alt="Logo_Bigote" />
       </article>
 

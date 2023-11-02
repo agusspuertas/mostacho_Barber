@@ -12,7 +12,7 @@ function Header() {
            </div>
       </section>
 
-      <section className='col-span-2 flex justify-around items-center'>
+      <section className='col-span-2 flex justify-around text-gray-700 items-center'>
         <article>
         <LinkRouter to={'/'} > <p>Inicio</p> </LinkRouter>
         </article>
