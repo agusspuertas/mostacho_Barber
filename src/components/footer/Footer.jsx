@@ -21,7 +21,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className='flex justify-center items-center  w-[18rem] h-[5rem] rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] transition ease-in-out delay-200 hover:scale-105'>
+        <div className='flex justify-center items-center w-[15rem] h-[3.5rem] md:w-[18rem] md:h-[5rem] rounded-xl shadow-lg shadow-gray-400 bg-[#383D42] transition ease-in-out delay-200 hover:scale-105'>
 
           <ul className='flex'>
             <a href=""><li className='ml-auto mr-7'><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="100" viewBox="0 0 48 48">
