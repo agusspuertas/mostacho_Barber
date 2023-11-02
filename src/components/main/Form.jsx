@@ -48,7 +48,7 @@ const Formulario = () => {
       <button className='bg-[#383D42]  text-white w-content p-1 px-3 font-bold mx-auto rounded-2xl delay-100 hover:text-blue-400 hover:scale-105   ' onClick={handleOpen}>Pedí tu Turno</button>
 
       {open && (
-        <form className=' min-w-full m-auto min-h-fit my-5 shadow-lg shadow-gray-600 bg-[#383D42] flex flex-col place-items-center rounded-2xl'>
+        <form className=' min-w-full m-auto min-h-fit my-5 shadow-lg shadow-gray-600 bg-[#383D42] flex flex-col place-items-center rounded-2xl '>
 
           {/* PRIMER FORMULARIO */}
 
@@ -99,9 +99,9 @@ const Formulario = () => {
           {/* SEGUNDO FORMULARIO */}
 
           {step === 2 && (
-            <div className='flex flex-col h-[23rem]'>
-              <section className='flex '>
-                <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle " onClick={handlePrev}>
+            <div className='flex flex-col h-[23rem] min-w-full place-items-center'>
+              <section className='flex w-full'>
+                <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-5 btn-circle " onClick={handlePrev}>
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
                 </button>
                   <h1 className='m-auto font-bold text-2xl text-white'> Fecha y Hora </h1>
@@ -141,15 +141,15 @@ const Formulario = () => {
 
           {step === 3 && (
 
-            <div className='flex flex-col h-[23rem]  '>
-             <section className='flex'>
-                <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-3 btn-circle md:mr-32" onClick={handlePrev}>
+            <div className='flex flex-col h-[23rem] min-w-full place-items-center'>
+             <section className='flex w-full'>
+                <button className="btn-xs hover:bg-gray-100 w-8 h-8 absolute bg-gray-200 text-left mt-1 ml-5 btn-circle" onClick={handlePrev}>
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.071 5L7.70708 11.364C7.31656 11.7545 7.31656 12.3877 7.70708 12.7782L14.071 19.1421" stroke="#000000" strokeLinecap="round"></path> </g></svg>
                 </button>
                   <h1 className='m-auto font-bold text-2xl text-white'> Tu Información </h1>
               </section>
 
-            <section className='flex flex-col place-items-center'>
+            <section className='flex flex-col max-w-min'>
               <label className="block text-sm mr-auto mt-5 font-medium text-white"> Nombre: </label>
               <div className="mt-2">
                 <input
