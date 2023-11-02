@@ -131,8 +131,8 @@ const Formulario = () => {
                 </select>
               </section>
               <div className='flex justify-center mt-auto mb-3 text-white'>
-                <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleCancel} >Cancelar</button>
-                <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleNext} >Siguinte</button>
+                <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3 px-2' onClick={handleCancel} >Cancelar</button>
+                <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3 px-2' onClick={handleNext} >Siguinte</button>
               </div>
             </div>
           )}
@@ -187,9 +187,9 @@ const Formulario = () => {
 
 
 
-              <div className='flex justify-center mt-auto mb-3 text-white'>
-                <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3' onClick={handleCancel} >Cancelar</button>
-                <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3' type="submit"> Enviar </button>
+              <div className='flex justify-center mt-auto mb-3 text-center text-white'>
+                <button className='bg-red-400 w-2/5 justify-center rounded-2xl mx-3 px-2' onClick={handleCancel} >Cancelar</button>
+                <button className='bg-blue-400 w-2/5 justify-center rounded-2xl mx-3 px-2' type="submit"> Enviar </button>
               </div>
 
             </div>
